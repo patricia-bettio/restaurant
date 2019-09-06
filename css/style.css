@@ -1,0 +1,198 @@
+body{
+    padding: 1rem;
+    background-image: url("../imgs/Restaurants.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.productbody {
+    background-color: white;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+
+h1 {
+    text-transform: capitalize;
+}
+
+
+.productlist img {
+
+ transition: all 0.4s;
+}
+main {
+    font-size:;
+}
+article {
+    display: flex;
+    flex-flow: column;
+}
+
+article {
+    margin: rem 0;
+    padding: 0;
+}
+
+/* box of each Article/ Dish*/
+
+article {
+    border: 0.2px solid white;
+    border-radius: 0.2rem;
+}
+
+/*buton style*/
+
+button {
+    font-family: Georgia;
+    text-transform:uppercase;
+    font-weight: lighter;
+    background: #66ffcc;
+    color: #696969;
+    padding: 0.8rem;
+    border: 0px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* for browsers that support GRID, apply the below*/
+@supports (display:grid) {
+ main {
+    max-width: none;
+    margin: 0;
+}
+    article {
+        margin: 0;
+    }
+
+    .productlist>section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1.5rem;
+    }
+    .productlist>section>h1{
+        grid-column: 1/-1;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 0.5rem;
+        border-radius: 0.3rem;
+        background-color: rgba(255, 255, 255, 0.3);
+
+    }
+}
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    text-transform:capitalize;
+    font-size: 40pt;
+    font-weight: 100;
+
+
+}
+.data_name {
+    font-size: 30;
+    font-family: Georgia;
+    font-weight: 50;
+    text-align: left;
+    margin-left: 2rem;;
+}
+
+.data_price {
+    text-align: right;
+    font-family: Georgia;
+    font-weight: 500;
+    margin: 2rem;
+}
+.data_discount {
+    text-align: right;
+    margin: 2rem;
+}
+.discount {
+    text-decoration: line-through;
+    color: red;
+    text-align: right;
+    margin: 2rem;
+}
+
+
+div.containsAlcohol {
+    display: none;
+}
+
+article.containsAlcohol div.containsAlcohol {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--tertiary);
+    padding: 8px;
+    color: #fff;
+    transform: translate(0px, -60px) rotate(-45deg);
+}
+
+.discount {
+    text-decoration: line-through;
+}
+
+.soldOut::after {
+    position:relative;
+    box-sizing: border-box;
+    top:0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    content: "Sold Out";
+    background-color: #ff668c;
+}
+
+
+
+footer {
+    display: flex;
+}
+/*MODAL*/
+
+.hide {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
+}
+
+
+
+
+
+
+
+
+

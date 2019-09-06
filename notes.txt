@@ -1,0 +1,12 @@
+ if(dish.discount){
+        copy.querySelector("data_price").classList.add("discount");
+    } else {
+        copy.querySelector(".data_discount").remove();
+    }
+ 
+    
+    if(!dish.soldout){
+        
+    } else {
+        copy.querySelector("article").classList.remove("soldOut");
+    }
